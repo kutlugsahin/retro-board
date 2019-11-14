@@ -11,4 +11,3 @@ function createAction<T>(type: string, payload?: T) {
 export {
     createAction,
 }
-

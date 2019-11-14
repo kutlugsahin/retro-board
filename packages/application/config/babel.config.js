@@ -5,10 +5,10 @@ module.exports = (api) => {
         presets: [
             '@babel/preset-env',
             '@babel/preset-typescript',
-            "@babel/preset-react",
+            '@babel/preset-react',
         ],
         plugins: [
-            ["@babel/transform-runtime"]
-        ]
+            ['@babel/transform-runtime'],
+        ],
     };
 }

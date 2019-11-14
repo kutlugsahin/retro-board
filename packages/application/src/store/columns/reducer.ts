@@ -16,7 +16,7 @@ const defaultState: ColumnState = {
         id: '3',
         name: 'Action',
         cards: ['7', '8', '9'],
-    }
+    },
 }
 
 export const columns = (state: ColumnState = defaultState, action: Action) => {
