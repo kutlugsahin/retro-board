@@ -3,13 +3,15 @@ const entryFile = path.join(__dirname, '..', 'src', 'index.ts');
 const dist = path.join(__dirname, '..', 'dist');
 const nodeExternals = require('webpack-node-externals');
 
+console.log('============== using webpack config ======================');
+
 module.exports = {
     entry: entryFile,
     output: {
         path: dist,
         filename: 'index.js',
     },
-    devtool: 'eval',
+    // devtool: 'eval-source-map',
     target: 'node',
     module: {
         rules: [
