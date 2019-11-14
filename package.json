@@ -8,7 +8,16 @@
     "packages/*"
   ],
   "devDependencies": {
-    "concurrently": "5.0.0"
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "concurrently": "5.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1"
   },
   "scripts": {
     "start:app": "cd packages/application&&yarn start",

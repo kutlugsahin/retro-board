@@ -15,8 +15,14 @@ module.exports = {
         contentBase: dist,
         compress: true,
         port: 3000,
+        stats: {
+            display: process.env.NODE_ENV === 'production' ? 'verbose' : 'minimal',
+        },
+        proxy: {
+            '/api': 'http://localhost:8080'
+        }
     },
-    devtool: 'source-map',
+    devtool: 'cheap-module-eval-source-map',
     module: {
         rules: [
             {
@@ -54,6 +60,7 @@ module.exports = {
                     // Compiles Sass to CSS
                     'sass-loader',
                 ],
+                exclude: /node_modules/,
             },
         ],
     },

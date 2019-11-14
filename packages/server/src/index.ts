@@ -1,11 +1,15 @@
 import express from 'express';
+import controllers from './controllers';
 
 const app = express();
 
-app.get("/", (req, res) => {
-    res.json({
-        asda: 'asdasd222',
-    });
-})
+app.use('/', express.static('public'));
+app.use('/api', controllers);
 
-app.listen('3000');
+app.listen('8080', (err) => {
+    if (err) {
+        return console.error(err);
+    }
+
+    console.info('Server is listening at http://localhost:8080');
+});
