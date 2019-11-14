@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "jsx": "preserve",
+        "allowJs": false,
+        "sourceMap": false,
+    },
+}
