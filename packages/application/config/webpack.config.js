@@ -19,7 +19,7 @@ module.exports = {
             display: process.env.NODE_ENV === 'production' ? 'verbose' : 'minimal',
         },
         proxy: {
-            '/api': 'http://localhost:8080',
+            '/api': 'http://localhost:3300',
         },
     },
     devtool: 'cheap-module-eval-source-map',
