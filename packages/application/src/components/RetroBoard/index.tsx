@@ -3,6 +3,7 @@ import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectBoard } from '../../store/board/selectors';
 import { getBoard } from '../../store/board/actions';
+import { ColumnState } from '../../store/columns/interfaces';
 // import { useDispatch, useSelector } from 'react-redux';
 
 export const RetroBoard = () => {
@@ -19,6 +20,16 @@ export const RetroBoard = () => {
         return null;
     }
 
+    const columns = boardState.columns;
+
+    const renderColumns = (columns: ColumnState) => {
+        return <div className={}>
+
+        </div>
+    }
+    if (columns) {
+        return renderColumns();
+    }
     // return null;
 
     return <div>RetroBoard with id: {boardId}</div>;
