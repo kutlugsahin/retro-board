@@ -37,7 +37,8 @@
         "typings-for-css-modules-loader": "^1.7.0",
         "webpack": "4.41.2",
         "webpack-cli": "^3.3.10",
-        "webpack-dev-server": "^3.9.0"
+        "webpack-dev-server": "^3.9.0",
+        "antd": "3.25.2"
     },
     "scripts": {
         "start": "webpack-dev-server --config config/webpack.config.js -d --open",
