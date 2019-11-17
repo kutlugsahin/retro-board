@@ -13,8 +13,7 @@ app.get('/create', (req, res) => {
 
 app.get('/:id', (req, res) => {
     const board: Board = boards[req.params.id];
-    if (!board)
-        return res.status(404); 
+    if (!board) { return res.status(404); }
 
     return res.json(board);
 });
