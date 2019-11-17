@@ -15,7 +15,7 @@
     },
     "scripts": {
         "build:watch": "tsc -w",
-        "start:server": "nodemon --inspect dist/index.js",
+        "start:server": "nodemon dist/index.js",
         "build": "tsc --sourceMap false",
         "start": "concurrently yarn:build:watch yarn:start:server"
     }
