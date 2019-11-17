@@ -1,7 +1,7 @@
 import express from 'express';
 const app = express.Router();
 
-app.get('/', (req, res) => {
+app.get('/create', (req, res) => {
     return res.json({
         user: 'asdasd',
     });

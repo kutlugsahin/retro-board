@@ -1,8 +1,8 @@
 import express from 'express';
-import user from './user';
+import retro from './retro';
 
 const app = express.Router();
 
-app.use('/user', user);
+app.use('/retro', retro);
 
 export default app;
